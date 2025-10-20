@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Module 3: Requirements Engineering</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0fdf4; }
+    h1 { color: #047857; border-bottom: 2px solid #bbf7d0; padding-bottom: 10px; }
+    h2 { color: #065f46; margin-top: 25px; }
+    .story { background: #f0fdf4; padding: 15px; border-left: 4px solid #10b981; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .activity { background: #eff6ff; padding: 15px; border-left: 4px solid #3b82f6; margin: 20px 0; }
+    .qa { background: #fef3c7; padding: 15px; border-left: 4px solid #f59e0b; margin: 20px 0; }
+    a.back { display: inline-block; margin-top: 20px; color: #047857; text-decoration: none; }
+    a.back:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Module 3: Requirements Engineering in the AI Era</h1>
+  <p><strong>Time:</strong> 11:15 AM – 12:15 PM | <strong>Duration:</strong> 45 min teaching + 15 min Q&A</p>
+
+  <h2>Learning Objectives</h2>
+  <ul>
+    <li>Distinguish functional vs. non-functional requirements.</li>
+    <li>Elicit and validate requirements using modern tools (LLMs, Salesforce Einstein).</li>
+    <li>Avoid ambiguity and incompleteness in AI-driven systems.</li>
+  </ul>
+
+  <div class="story">
+    <h3>🔍 Real-World Story: CRM → Salesforce Einstein</h3>
+    <p><strong>1990s – Traditional CRM:</strong> Users filled forms. Reports were static.</p>
+    <p><strong>2016 – Salesforce Einstein:</strong> AI layer that predicts lead conversion, recommends next best action, and auto-generates summaries.</p>
+    <p><strong>Requirement Shift:</strong> From “store customer data” to “predict customer churn with 90% accuracy and explain why.”</p>
+    <p><strong>Challenge:</strong> How do you specify “explainable AI” in a requirement?</p>
+  </div>
+
+  <h2>Requirements in SWEBOK V4</h2>
+  <ul>
+    <li><strong>Functional:</strong> What the system does (e.g., “User can reset password”).</li>
+    <li><strong>Non-functional:</strong> How well it does it (e.g., “Password reset email arrives in < 30 sec”).</li>
+    <li><strong>Constraints:</strong> “Must comply with GDPR.”</li>
+    <li><strong>LLM-Specific:</strong> “Cite sources,” “Refuse medical advice,” “Support 5 languages.”</li>
+  </ul>
+
+  <h2>Modern Tools & Pitfalls</h2>
+  <ul>
+    <li><strong>LLM Prompt:</strong> “Generate user stories for a mental health chatbot that respects privacy and avoids diagnosis.”</li>
+    <li><strong>Pitfall:</strong> “The system shall be intelligent” → too vague.</li>
+    <li><strong>Fix:</strong> “The LLM shall refuse to answer medical questions and redirect to a human professional.”</li>
+    <li><strong>Tool:</strong> Jira + AI plugins auto-tag requirements by risk and traceability.</li>
+  </ul>
+
+  <div class="activity">
+    <h3>🎯 Interactive Activity (10 min)</h3>
+    <p><strong>Fix This Requirement:</strong></p>
+    <ol>
+      <li>Give students: “The AI shall be helpful.”</li>
+      <li>In pairs, rewrite it using SMART + AI guardrails.</li>
+      <li>Share best version with class.</li>
+    </ol>
+  </div>
+
+  <div class="qa">
+    <h3>❓ Q&A Discussion Prompts (15 min)</h3>
+    <ol>
+      <li>How do you validate an LLM’s behavior before coding?</li>
+      <li>Can non-functional requirements be more important than functional ones in AI systems?</li>
+      <li>Who owns requirements in an AI project: data scientist, engineer, or product manager?</li>
+      <li>Should LLMs be required to cite sources like Perplexity?</li>
+      <li>How do you handle conflicting stakeholder needs (e.g., marketing wants personalization, legal wants privacy)?</li>
+    </ol>
+  </div>
+
+  <a href="index.html" class="back">← Back to Home</a>
+</body>
+</html>

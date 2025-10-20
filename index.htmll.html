@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Software Engineering — Day 1 (Modernized)</title>
+  <style>
+    :root {
+      --primary: #6366f1;
+      --secondary: #4f46e5;
+      --accent: #8b5cf6;
+      --light: #f9fafb;
+      --dark: #1e293b;
+      --card: #ffffff;
+      --shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      color: var(--dark);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      margin-bottom: 30px;
+      border-top: 4px solid var(--primary);
+    }
+    h1 {
+      color: var(--secondary);
+      font-size: 2.2rem;
+      margin: 0;
+    }
+    .subtitle {
+      color: #475569;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    .module {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 25px;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--accent);
+    }
+    .module h2 {
+      margin-top: 0;
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .emoji { font-size: 1.4em; }
+    .highlight {
+      background: #dbeafe;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      color: #1e40af;
+    }
+    .trend {
+      background: #fef3c7;
+      border-left: 3px solid #d97706;
+      padding: 12px;
+      margin: 15px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+    ul, ol {
+      padding-left: 20px;
+      margin: 12px 0;
+    }
+    li { margin-bottom: 8px; }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 15px; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Software Engineering — Day 1</h1>
+      <p class="subtitle">From Yahoo → Google → Perplexity • Orkut → Instagram • Monoliths → AI Agents</p>
+    </header>
+
+    <div class="module">
+      <h2><span class="emoji">🎓</span> Module 1: What Is Software Engineering?</h2>
+      <p><strong>Real-World Journey:</strong> Yahoo (human-curated) → Google (PageRank) → Perplexity (LLM + citations)</p>
+      <ul>
+        <li>Define SE vs. programming</li>
+        <li>Ethics in AI: Bias, transparency, EU AI Act</li>
+        <li>Why SE matters: Therac-25, Boeing 737 MAX</li>
+      </ul>
+      <div class="trend">🔥 <strong>2024 Trend:</strong> AI doesn’t replace engineers—it amplifies them. Your job: guide the AI.</div>
+    </div>
+
+    <div class="module">
+      <h2><span class="emoji">🔄</span> Module 2: SDLC Models</h2>
+      <p><strong>Real-World Journey:</strong> Orkut (monolith) → Facebook (modular) → Instagram (microservices + events)</p>
+      <ul>
+        <li>Waterfall → Agile → DevOps</li>
+        <li>Spotify’s Tribe/Guild model: Autonomy + alignment</li>
+        <li>AI in Agile: Forecast.app predicts sprint velocity</li>
+      </ul>
+      <div class="trend">💡 <strong>Fun Fact:</strong> Spotify’s squads inspired Netflix, Uber, and Airbnb’s engineering culture.</div>
+    </div>
+
+    <div class="module">
+      <h2><span class="emoji">📝</span> Module 3: Requirements in the AI Era</h2>
+      <p><strong>Real-World Journey:</strong> CRM forms → Salesforce Einstein (predictive AI)</p>
+      <ul>
+        <li>Functional vs. non-functional (e.g., “cite sources” for Perplexity)</li>
+        <li>LLM prompt: “Generate user stories for a mental health chatbot”</li>
+        <li>Avoid vague: “The system shall be intelligent” → “LLM shall refuse medical advice”</li>
+      </ul>
+    </div>
+
+    <div class="module">
+      <h2><span class="emoji">🧱</span> Module 4: Design for Change</h2>
+      <p><strong>Real-World Model:</strong> Spotify’s Squads & Guilds</p>
+      <ul>
+        <li>Cohesion (high) vs. Coupling (low)</li>
+        <li>KISS, DRY, YAGNI principles</li>
+        <li>Anti-pattern: “God Team” (one team owns everything)</li>
+      </ul>
+    </div>
+
+    <div class="module">
+      <h2><span class="emoji">🏗️</span> Module 5: Modern Architectures</h2>
+      <p><strong>Real-World Tool:</strong> <span class="highlight">n8n.io</span> — Open-source workflow automation (like Zapier + AI)</p>
+      <ul>
+        <li>Microservices vs. serverless</li>
+        <li>AI Agents as Services (e.g., “Research Agent”)</li>
+        <li>Patterns: Circuit Breaker → AI Fallback</li>
+      </ul>
+      <div class="trend">🚀 <strong>Try it:</strong> Build a workflow: GitHub issue → Slack alert → Jira ticket (in 5 mins on n8n.cloud)</div>
+    </div>
+
+    <div class="module">
+      <h2><span class="emoji">🧪</span> Module 6: AI-Augmented Testing</h2>
+      <p><strong>Real-World Tools:</strong> <span class="highlight">UiPath</span>, <span class="highlight">Blue Prism</span> (RPA for test automation)</p>
+      <ul>
+        <li>LLMs generate edge-case test data</li>
+        <li>Non-deterministic AI outputs → semantic similarity checks</li>
+        <li>Self-healing tests with Applitools</li>
+      </ul>
+    </div>
+
+    <div class="module">
+      <h2><span class="emoji">🤝</span> Module 7: Git + AI Collaboration</h2>
+      <p><strong>Real-World Tools:</strong> GitHub Copilot, CodeRabbit</p>
+      <ul>
+        <li>Copilot writes unit tests & PR descriptions</li>
+        <li>AI code reviewers flag security flaws</li>
+        <li>Risk: “AI debt” from over-reliance</li>
+      </ul>
+    </div>
+
+    <div class="module">
+      <h2><span class="emoji">🚀</span> Module 8: Capstone Kickoff</h2>
+      <p><strong>Build Your Own AI Agent!</strong></p>
+      <ul>
+        <li>Option 1: LLM Requirements Assistant (LangChain + OpenAI)</li>
+        <li>Option 2: RPA Bot for University Tasks (UiPath Community)</li>
+        <li>Option 3: Modernize a “Yahoo-era” monolith</li>
+      </ul>
+      <div class="trend">🎯 <strong>You’ll learn:</strong> Prompt engineering, workflow automation, ethical AI, and teamwork!</div>
+    </div>
+
+    <footer>
+      <p>Software Engineering Day 1 • Offline Session • Double-click to open anytime!</p>
+      <p>© 2024 • Based on SWEBOK V4 + Modern AI Trends</p>
+    </footer>
+  </div>
+</body>
+</html>

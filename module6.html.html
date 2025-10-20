@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Module 6: AI-Augmented Testing</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background: #fff7ed; }
+    h1 { color: #b45309; border-bottom: 2px solid #fed7aa; padding-bottom: 10px; }
+    h2 { color: #92400e; margin-top: 25px; }
+    .story { background: #fff7ed; padding: 15px; border-left: 4px solid #f59e0b; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .activity { background: #f0f9ff; padding: 15px; border-left: 4px solid #0284c7; margin: 20px 0; }
+    .qa { background: #f0fdf4; padding: 15px; border-left: 4px solid #16a34a; margin: 20px 0; }
+    a.back { display: inline-block; margin-top: 20px; color: #b45309; text-decoration: none; }
+    a.back:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Module 6: AI-Augmented Software Testing</h1>
+  <p><strong>Time:</strong> 3:30 – 4:30 PM | <strong>Duration:</strong> 45 min teaching + 15 min Q&A</p>
+
+  <h2>Learning Objectives</h2>
+  <ul>
+    <li>Understand testing levels (unit, integration, system).</li>
+    <li>Use RPA (UiPath, Blue Prism) for test automation.</li>
+    <li>Generate test cases with LLMs and handle non-deterministic AI outputs.</li>
+  </ul>
+
+  <div class="story">
+    <h3>🔍 Real-World Tools: UiPath & Blue Prism</h3>
+    <p><strong>Robotic Process Automation (RPA)</strong> bots mimic human actions in UIs:</p>
+    <ul>
+      <li><strong>UiPath:</strong> Automates legacy system testing (e.g., SAP, mainframes).</li>
+      <li><strong>Blue Prism:</strong> Used in banks for regression testing.</li>
+    </ul>
+    <p><strong>AI Fusion:</strong> Combine RPA with LLMs to generate test data: “Create 10 invalid credit card numbers.”</p>
+  </div>
+
+  <h2>Testing in SWEBOK V4</h2>
+  <ul>
+    <li><strong>Unit Testing:</strong> Test individual functions (e.g., JUnit, pytest).</li>
+    <li><strong>Integration Testing:</strong> Test module interactions.</li>
+    <li><strong>System Testing:</strong> End-to-end user scenarios.</li>
+    <li><strong>AI Challenge:</strong> LLM outputs are non-deterministic → can’t use exact string match.</li>
+    <li><strong>Solution:</strong> Semantic similarity checks, snapshot testing, oracles.</li>
+  </ul>
+
+  <h2>Modern Testing Trends</h2>
+  <ul>
+    <li><strong>LLM-Generated Tests:</strong> “Write 5 edge cases for a login function.”</li>
+    <li><strong>Self-Healing Tests:</strong> Applitools detects UI changes and auto-updates locators.</li>
+    <li><strong>Test-Driven Development (TDD):</strong> Red → Green → Refactor.</li>
+  </ul>
+
+  <div class="activity">
+    <h3>🎯 Interactive Activity (10 min)</h3>
+    <p><strong>Generate Test Cases:</strong></p>
+    <ol>
+      <li>Function: `calculateDiscount(age, isStudent)`</li>
+      <li>In pairs, write 3 test cases (including edge cases).</li>
+      <li>Then, ask an LLM (if available) or imagine: “What 3 edge cases would an AI suggest?”</li>
+    </ol>
+  </div>
+
+  <div class="qa">
+    <h3>❓ Q&A Discussion Prompts (15 min)</h3>
+    <ol>
+      <li>Can you have 100% test coverage but still have bugs?</li>
+      <li>Is manual testing obsolete?</li>
+      <li>How much testing is “enough”?</li>
+      <li>Should developers write their own tests?</li>
+      <li>Does TDD slow down development?</li>
+    </ol>
+  </div>
+
+  <a href="index.html" class="back">← Back to Home</a>
+</body>
+</html>

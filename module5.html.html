@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Module 5: Modern Architectures</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background: #fdf2f8; }
+    h1 { color: #be123c; border-bottom: 2px solid #fbcfe8; padding-bottom: 10px; }
+    h2 { color: #9f1239; margin-top: 25px; }
+    .story { background: #fdf2f8; padding: 15px; border-left: 4px solid #ec4899; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .activity { background: #f0fdfa; padding: 15px; border-left: 4px solid #0d9488; margin: 20px 0; }
+    .qa { background: #ede9fe; padding: 15px; border-left: 4px solid #7c3aed; margin: 20px 0; }
+    a.back { display: inline-block; margin-top: 20px; color: #be123c; text-decoration: none; }
+    a.back:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Module 5: Modern Architectural Styles & Patterns</h1>
+  <p><strong>Time:</strong> 2:15 – 3:15 PM | <strong>Duration:</strong> 45 min teaching + 15 min Q&A</p>
+
+  <h2>Learning Objectives</h2>
+  <ul>
+    <li>Identify layered, microservices, event-driven, and serverless architectures.</li>
+    <li>Understand n8n.io’s composable workflow engine.</li>
+    <li>Apply design patterns (Singleton, Observer) and avoid anti-patterns.</li>
+  </ul>
+
+  <div class="story">
+    <h3>🔍 Real-World Tool: n8n.io</h3>
+    <p>n8n is an open-source, node-based workflow automation tool (like Zapier + AI).</p>
+    <ul>
+      <li>Each “node” is a microservice (e.g., Gmail, Slack, LLM).</li>
+      <li>Workflows are built visually — no code needed.</li>
+      <li>Used by startups to automate: “When GitHub issue opened → Slack alert → Jira ticket.”</li>
+    </ul>
+    <p><strong>Architecture Lesson:</strong> Composable, loosely coupled, reusable components.</p>
+  </div>
+
+  <h2>Architectural Styles (SWEBOK V4)</h2>
+  <ul>
+    <li><strong>Layered:</strong> Presentation → Business → Data (e.g., traditional web apps).</li>
+    <li><strong>Client-Server:</strong> Web browsers + REST APIs.</li>
+    <li><strong>MVC:</strong> Model-View-Controller (still used in React/Vue).</li>
+    <li><strong>Microservices:</strong> Netflix, Uber — independent deployable services.</li>
+    <li><strong>Event-Driven:</strong> Kafka, AWS SNS — react to events (e.g., user signup → welcome email).</li>
+    <li><strong>Serverless:</strong> AWS Lambda — run code without servers.</li>
+  </ul>
+
+  <h2>Design Patterns & AI Agents</h2>
+  <ul>
+    <li><strong>Singleton:</strong> One instance (e.g., database connection pool). Use sparingly!</li>
+    <li><strong>Observer:</strong> Notify subscribers (e.g., UI updates when data changes).</li>
+    <li><strong>AI Agents as Services:</strong> “Research Agent” + “Code Agent” = composable AI system.</li>
+    <li><strong>Circuit Breaker:</strong> If LLM fails, fall back to rule-based system.</li>
+  </ul>
+
+  <div class="activity">
+    <h3>🎯 Interactive Activity (10 min)</h3>
+    <p><strong>Build a Workflow:</strong></p>
+    <ol>
+      <li>“Design an n8n-like workflow for university admissions.”</li>
+      <li>Steps: Form → Validate → LLM interview summary → Email decision.</li>
+      <li>Sketch nodes and connections on paper.</li>
+    </ol>
+  </div>
+
+  <div class="qa">
+    <h3>❓ Q&A Discussion Prompts (15 min)</h3>
+    <ol>
+      <li>Are microservices always better than monoliths?</li>
+      <li>When is the Singleton pattern justified?</li>
+      <li>Can architecture be changed late in development?</li>
+      <li>How do you evaluate if an architecture is “good”?</li>
+      <li>Is MVC still relevant with modern front-end frameworks?</li>
+    </ol>
+  </div>
+
+  <a href="index.html" class="back">← Back to Home</a>
+</body>
+</html>

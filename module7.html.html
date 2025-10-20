@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Module 7: Git + AI Collaboration</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f9ff; }
+    h1 { color: #1e40af; border-bottom: 2px solid #dbeafe; padding-bottom: 10px; }
+    h2 { color: #1e3a8a; margin-top: 25px; }
+    .story { background: #f0f9ff; padding: 15px; border-left: 4px solid #3b82f6; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .activity { background: #fdf2f8; padding: 15px; border-left: 4px solid #e879f9; margin: 20px 0; }
+    .qa { background: #f0fdfa; padding: 15px; border-left: 4px solid #0d9488; margin: 20px 0; }
+    a.back { display: inline-block; margin-top: 20px; color: #1e40af; text-decoration: none; }
+    a.back:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Module 7: Version Control & AI Collaboration</h1>
+  <p><strong>Time:</strong> 4:30 – 5:30 PM | <strong>Duration:</strong> 45 min teaching + 15 min Q&A</p>
+
+  <h2>Learning Objectives</h2>
+  <ul>
+    <li>Use Git for version control (commit, branch, merge).</li>
+    <li>Understand pull requests and code reviews.</li>
+    <li>Leverage AI tools (Copilot, CodeRabbit) responsibly.</li>
+  </ul>
+
+  <div class="story">
+    <h3>🔍 Real-World Tools: GitHub Copilot & CodeRabbit</h3>
+    <p><strong>GitHub Copilot:</strong> AI pair programmer that suggests code, writes tests, and explains legacy code.</p>
+    <p><strong>CodeRabbit:</strong> AI that reviews pull requests, explains changes, and suggests improvements.</p>
+    <p><strong>Risk:</strong> “AI debt” — over-reliance leads to shallow understanding and security flaws.</p>
+    <p><strong>Best Practice:</strong> Treat AI as a junior dev — always review its output!</p>
+  </div>
+
+  <h2>Git Fundamentals (SWEBOK V4)</h2>
+  <ul>
+    <li><strong>Repository:</strong> Single source of truth for code.</li>
+    <li><strong>Branching:</strong> Isolate features (e.g., `feature/login`).</li>
+    <li><strong>Merging:</strong> Integrate changes; resolve conflicts.</li>
+    <li><strong>Pull Request (PR):</strong> Request to merge + code review.</li>
+    <li><strong>Code Review:</strong> Catch bugs, share knowledge, enforce standards.</li>
+  </ul>
+
+  <h2>Modern Workflows</h2>
+  <ul>
+    <li><strong>GitHub Flow:</strong> `main` is always deployable; short-lived feature branches.</li>
+    <li><strong>GitLab CI/CD:</strong> Auto-run tests on every push.</li>
+    <li><strong>AI in PRs:</strong> Copilot suggests PR descriptions; CodeRabbit flags security issues.</li>
+  </ul>
+
+  <div class="activity">
+    <h3>🎯 Interactive Activity (10 min)</h3>
+    <p><strong>Review This Code:</strong></p>
+    <ol>
+      <li>Show a snippet of Copilot-generated code with a security flaw (e.g., hardcoded password).</li>
+      <li>In pairs, find the issue and suggest a fix.</li>
+      <li>Discuss: “Why did Copilot make this mistake?”</li>
+    </ol>
+  </div>
+
+  <div class="qa">
+    <h3>❓ Q&A Discussion Prompts (15 min)</h3>
+    <ol>
+      <li>What’s the difference between `git pull` and `git fetch`?</li>
+      <li>How do you handle a merge conflict in practice?</li>
+      <li>Should every commit be deployable?</li>
+      <li>Is Git the only version control system worth learning?</li>
+      <li>How do code reviews improve quality beyond catching bugs?</li>
+    </ol>
+  </div>
+
+  <a href="index.html" class="back">← Back to Home</a>
+</body>
+</html>

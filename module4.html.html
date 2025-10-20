@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Module 4: Software Design Fundamentals</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f9ff; }
+    h1 { color: #0891b2; border-bottom: 2px solid #bae6fd; padding-bottom: 10px; }
+    h2 { color: #0e7490; margin-top: 25px; }
+    .story { background: #f0f9ff; padding: 15px; border-left: 4px solid #06b6d4; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .activity { background: #f5f5f5; padding: 15px; border-left: 4px solid #6b7280; margin: 20px 0; }
+    .qa { background: #fde68a; padding: 15px; border-left: 4px solid #ca8a04; margin: 20px 0; }
+    a.back { display: inline-block; margin-top: 20px; color: #0891b2; text-decoration: none; }
+    a.back:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Module 4: Software Design Fundamentals</h1>
+  <p><strong>Time:</strong> 1:15 – 2:15 PM | <strong>Duration:</strong> 45 min teaching + 15 min Q&A</p>
+
+  <h2>Learning Objectives</h2>
+  <ul>
+    <li>Apply abstraction, modularity, and separation of concerns.</li>
+    <li>Understand cohesion (high) vs. coupling (low).</li>
+    <li>Learn from Spotify’s Tribe/Guild model for team design.</li>
+  </ul>
+
+  <div class="story">
+    <h3>🔍 Real-World Story: Spotify’s Tribe Model</h3>
+    <p>Spotify scaled to 100+ teams without bureaucracy by organizing into:</p>
+    <ul>
+      <li><strong>Squads:</strong> Autonomous, cross-functional teams (like mini-startups).</li>
+      <li><strong>Tribes:</strong> Groups of squads working on related areas.</li>
+      <li><strong>Guilds:</strong> Communities of practice (e.g., “Testing Guild”) for knowledge sharing.</li>
+    </ul>
+    <p><strong>Design Parallel:</strong> High cohesion within squads, low coupling between them — just like software modules!</p>
+  </div>
+
+  <h2>Core Design Principles (SWEBOK V4)</h2>
+  <ul>
+    <li><strong>Abstraction:</strong> Hide complexity (e.g., car dashboard hides engine details).</li>
+    <li><strong>Modularity:</strong> Break system into independent units.</li>
+    <li><strong>Cohesion:</strong> Elements in a module belong together (functional cohesion = best).</li>
+    <li><strong>Coupling:</strong> Dependencies between modules (data coupling = best, content coupling = worst).</li>
+    <li><strong>KISS, DRY, YAGNI:</strong> Keep It Simple, Don’t Repeat Yourself, You Aren’t Gonna Need It.</li>
+  </ul>
+
+  <h2>Anti-Patterns</h2>
+  <ul>
+    <li><strong>God Object:</strong> One class does everything.</li>
+    <li><strong>God Team:</strong> One team owns everything → bottleneck.</li>
+    <li><strong>Spaghetti Code:</strong> No structure, impossible to maintain.</li>
+  </ul>
+
+  <div class="activity">
+    <h3>🎯 Interactive Activity (10 min)</h3>
+    <p><strong>Redesign Your University:</strong></p>
+    <ol>
+      <li>“Course registration system is a monolith.”</li>
+      <li>In groups, sketch a modular design: what are the modules? (e.g., authentication, catalog, enrollment, billing)</li>
+      <li>Identify one high-cohesion, low-coupling interface.</li>
+    </ol>
+  </div>
+
+  <div class="qa">
+    <h3>❓ Q&A Discussion Prompts (15 min)</h3>
+    <ol>
+      <li>Can you have low coupling but low cohesion? Is that acceptable?</li>
+      <li>How early should design decisions be made?</li>
+      <li>Does “simple” design always mean fewer classes?</li>
+      <li>How do design principles conflict in practice?</li>
+      <li>Can over-engineering result from applying principles too rigidly?</li>
+    </ol>
+  </div>
+
+  <a href="index.html" class="back">← Back to Home</a>
+</body>
+</html>
